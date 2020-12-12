@@ -8,7 +8,8 @@
   src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff") format("woff"), url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff2") format("woff2")
 }
 
-* {
+.game-canvas{
+  position: flex; 
   box-sizing: border-box;
 }
 
