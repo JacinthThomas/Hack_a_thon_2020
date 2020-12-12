@@ -14,59 +14,28 @@
   <title>L.I.F.E.</title>
 </head>
 
-<body>
+<body onload="init();>
     <html>
         <head>
           <title>Mix-Or-Match</title>
         </head>
         
         <body>
-            <!-- <div class="container"
-            <div class="row">Score/ Timer</div>    
-            <div class="row">
-                <div class="col-6 timer" id="timer">0</div>
-            <div class="container">
-                <div class="quota-display" id="quotaDisplay">quote</div>
-             <textarea id="quotaInput" class="quote-input" autofocus>quota</textarea>   
-                </div>
-            </div> -->
-        <div align="right">
+            // <!-- <div class="container"
+            // <div class="row">Score/ Timer</div>    
+            // <div class="row">
+            //     <div class="col-6 timer" id="timer">0</div>
+            // <div class="container">
+            //     <div class="quota-display" id="quotaDisplay">quote</div>
+            //  <textarea id="quotaInput" class="quote-input" autofocus>quota</textarea>   
+            //     </div>
+            // </div> -->
+        <div align="center">
             <canvas id="game-canvas" width="512" height="384"></canvas>
           </div>
         </div>
     </div>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
-          <script src="Far.js"></script>
-          <script src="Mid.js"></script>
-          <script>
-            function init() {
-                stage = new PIXI.Container();
-                renderer = PIXI.autoDetectRenderer(
-                    512,
-                    384,
-                    {view:document.getElementById("game-canvas")}
-                );
-    
-                far = new Far();
-                stage.addChild(far);
-    
-                mid = new Mid();
-                stage.addChild(mid);
-    
-                
-    
-                requestAnimationFrame(update);
-            }
-    
-            function update() {
-                far.update();
-                mid.update();
-    
-                renderer.render(stage);
-    
-                requestAnimationFrame(update);
-            }
-          </script>
+          
             
             
             
@@ -387,6 +356,38 @@
     <img class="Character_shadow pixelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
     <img class="Character_spritesheet pixelart face-right" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacter.png" alt="Character" />
  </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.0/pixi.min.js"></script>
+          <script src="Far.js"></script>
+          <script src="Mid.js"></script>
+          <script>
+            function init() {
+                stage = new PIXI.Container();
+                renderer = PIXI.autoDetectRenderer(
+                    512,
+                    384,
+                    {view:document.getElementById("game-canvas")}
+                );
+    
+                far = new Far();
+                stage.addChild(far);
+    
+                mid = new Mid();
+                stage.addChild(mid);
+    
+                
+    
+                requestAnimationFrame(update);
+            }
+    
+            function update() {
+                far.update();
+                mid.update();
+    
+                renderer.render(stage);
+    
+                requestAnimationFrame(update);
+            }
+          </script>
   <script src="script.js"></script>
 </body>
  
