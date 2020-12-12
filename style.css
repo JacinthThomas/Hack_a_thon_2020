@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Creepy";
+  font-family: "Pretty";
   src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff?raw=true") format("woff"), url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff2?raw=true") format("woff2")
 }
 
 @font-face {
-  font-family: "Lunacy";
+  font-family: "Pretty";
   src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff") format("woff"), url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff2") format("woff2")
 }
 
