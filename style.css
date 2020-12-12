@@ -17,6 +17,15 @@ html {
   cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/Ghost.cur"), auto;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+.quota-display{
+    color: 2em white;
+    font: 2em white ;
+}
+
 body {
   margin: 0;
   background: radial-gradient(#9D5900, #3D2200);
